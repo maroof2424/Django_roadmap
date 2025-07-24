@@ -2,7 +2,7 @@
 
 **Duration:** 60 Days
 **Daily Time:** 1.5–2 Hours
-**Start Date Example:** July 22, 2025
+**Start Date Example:** July 20, 2025
 **Structure:**
 
 * 🧠 **Mon–Fri:** Concept + Practice
