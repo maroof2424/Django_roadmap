@@ -1,0 +1,29 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Products</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    <h1>All Products</h1>
+
+    <div class="products">
+        {% for product in products %}
+            <div class="product-card">
+                {% if product.image %}
+                    <img src="{{ product.image.url }}" alt="{{ product.name }}">
+                {% else %}
+                    <img src="{% static 'image/image.png' %}" alt="No image">
+                {% endif %}
+                <h3>{{ product.name }}</h3>
+                <p>{{ product.description }}</p>
+                <p><strong>PKR {{ product.price }}</strong></p>
+            </div>
+        {% endfor %}
+    </div>
+
+</body>
+</html>
